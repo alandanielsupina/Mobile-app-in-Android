@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6B7FFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/rezervujMi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="#6B7FFF"
+        android:fontFamily="casual"
+        android:text="@string/rezervuj_mi"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/novaRezervaciaBtn"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="150dp"
+        android:text="@string/nova_rezervacia"
+        app:layout_constraintEnd_toEndOf="@+id/rezervujMi"
+        app:layout_constraintStart_toStartOf="@+id/rezervujMi"
+        app:layout_constraintTop_toBottomOf="@+id/rezervujMi" />
+
+    <Button
+        android:id="@+id/mojeRezervacieBtn"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/moje_rezervácie"
+        app:layout_constraintEnd_toEndOf="@+id/novaRezervaciaBtn"
+        app:layout_constraintStart_toStartOf="@+id/novaRezervaciaBtn"
+        app:layout_constraintTop_toBottomOf="@+id/novaRezervaciaBtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

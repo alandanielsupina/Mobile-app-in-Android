@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Semestralka2</string>
+    <string name="rezervuj_mi">RezervujMi</string>
+    <string name="nova_rezervacia">Nová rezervácia</string>
+    <string name="moje_rezervácie">Moje rezervácie</string>
+    <string name="aktualne_dostupne_podniky">Aktuálne dostupné podniky</string>
+
+    <string name="nazov_podniku">Názov podniku</string>
+    <string name="nazov_mesta">Názov mesta</string>
+    <string name="slovne_zadajte_den_v_tyzdni">Slovne zadajte deň v týždni</string>
+    <string name="den">deň</string>
+    <string name="potvrdit">Potvrdiť</string>
+
+</resources>
