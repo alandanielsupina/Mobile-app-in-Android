@@ -14,6 +14,14 @@ import com.example.semestralka2.databinding.ActivityVybranyPodnikBinding
 import com.example.semestralka2.mojerezervacie.MojeRezervacieActivity
 
 class VybranyPodnikActivity : AppCompatActivity() {
+    /**
+     * Metóda nastaví data binding. Vytiahne vybraný podnik zo SharedPreferences a následne z databázy.
+     * Podľa daného vybraného podniku nastaví views.
+     * Taktiež sa postará o onClickListener pre tlačidlo potvrdenia novej rezervácie.
+     * Zabezpečuje nahratie novej rezervácii do databázy.
+     *
+     * @param savedInstanceState
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -52,6 +60,11 @@ class VybranyPodnikActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Metóda sa postará o uloženie stavu vstupného textu pre deň rezervácie kvôli prípadnému otočeniu obrazovky.
+     *
+     * @param outState
+     */
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
 

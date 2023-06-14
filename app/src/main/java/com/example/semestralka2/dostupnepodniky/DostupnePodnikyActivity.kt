@@ -9,6 +9,11 @@ import com.example.semestralka2.databinding.ActivityDostupnePodnikyBinding
 import com.example.semestralka2.vybranypodnik.VybranyPodnikActivity
 
 class DostupnePodnikyActivity : AppCompatActivity() {
+    /**
+     * Metóda nastaví data binding a adaptér pre Recycle View.
+     *
+     * @param savedInstanceState
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

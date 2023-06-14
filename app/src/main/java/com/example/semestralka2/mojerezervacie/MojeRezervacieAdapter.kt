@@ -8,9 +8,19 @@ import com.example.semestralka2.R
 import com.example.semestralka2.database.MojaRezervacia
 import com.example.semestralka2.databinding.RiadokRezervacieBinding
 
+/**
+ * Trieda je adaptér pre Recycle View, ktorý je využívaný v MojeRezervacieActivity
+ *
+ * @param polozky
+ */
 class MojeRezervacieAdapter (private var polozky : List<MojaRezervacia>) : RecyclerView.Adapter<MojeRezervacieAdapter.MojaRezervaciaViewHolder>() {
 
-        class MojaRezervaciaViewHolder(view : View) : RecyclerView.ViewHolder(view) {
+    /**
+     * Trieda je View Holder pre rezervaciu
+     *
+     * @param view
+     */
+    class MojaRezervaciaViewHolder(view : View) : RecyclerView.ViewHolder(view) {
             val binding: RiadokRezervacieBinding
 
             init {
@@ -18,12 +28,24 @@ class MojeRezervacieAdapter (private var polozky : List<MojaRezervacia>) : Recyc
             }
         }
 
+    /**
+     * Metóda vytvára nový View Holder pre každú položku
+     *
+     * @param parent
+     * @param viewType
+     */
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MojeRezervacieAdapter.MojaRezervaciaViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.riadok_rezervacie, parent, false)
 
         return MojaRezervaciaViewHolder(view)
     }
 
+    /**
+     * Metóda nastavuje obsah jednotlivých položiek
+     *
+     * @param viewHolder
+     * @param position
+     */
     override fun onBindViewHolder(viewHolder: MojeRezervacieAdapter.MojaRezervaciaViewHolder, position: Int) {
         val polozka = polozky[position]
 
@@ -32,6 +54,9 @@ class MojeRezervacieAdapter (private var polozky : List<MojaRezervacia>) : Recyc
         viewHolder.binding.nazovDnaMojeRezervacie.text  = polozka.den
     }
 
+    /**
+     * Metóda vracia počet položiek v zozname
+     */
     override fun getItemCount() : Int {
         return polozky.size
     }

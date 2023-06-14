@@ -6,6 +6,11 @@ import com.example.semestralka2.database.RezervaciaDatabase
 import com.example.semestralka2.databinding.ActivityMojeRezervacieBinding
 
 class MojeRezervacieActivity : AppCompatActivity() {
+    /**
+     * Metóda nastaví data binding a adaptér pre Recycle View.
+     *
+     * @param savedInstanceState
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

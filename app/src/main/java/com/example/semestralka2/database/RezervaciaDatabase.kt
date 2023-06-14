@@ -12,6 +12,12 @@ abstract class RezervaciaDatabase : RoomDatabase() {
     companion object {
         @Volatile
         private var INSTANCE: RezervaciaDatabase? = null
+
+        /**
+         * Metóta vráti inštanciu tiredy
+         *
+         * @param context
+         */
         fun getInstance(context: Context): RezervaciaDatabase {
             return INSTANCE ?: synchronized(this) {
                 INSTANCE ?: Room.databaseBuilder(

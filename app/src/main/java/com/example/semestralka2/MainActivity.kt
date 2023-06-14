@@ -10,6 +10,12 @@ import com.example.semestralka2.dostupnepodniky.DostupnePodnikyActivity
 import com.example.semestralka2.mojerezervacie.MojeRezervacieActivity
 
 class MainActivity : AppCompatActivity() {
+    /**
+     * Metóda nastaví data binding, nahrá dostupné podniky do databázy, pokiaľ ešte nie sú nastavené.
+     * Taktiež sa postará o onClickListenery pre tlačidlo nová rezervácia a tlačidlo moje rezervácie.
+     *
+     * @param savedInstanceState
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
